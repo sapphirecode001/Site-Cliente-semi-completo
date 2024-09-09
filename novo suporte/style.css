@@ -1,0 +1,212 @@
+@media only screen and (max-width:2000px) {
+    section .arroz div {
+        background-color: #9DC6EA;
+    }
+    .start {
+        color: #184DAB;
+    }
+    .batata {
+        background-color: #184DAB;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 100%;
+}
+
+.tit {
+width: 40%;
+text-align: center;
+}
+
+.start {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: end;
+}
+
+section {
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+section div {
+    height: 40vh;
+    width: 50%;
+}
+
+.arroz {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.fejao {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+section .arroz div {
+    width: 40%;
+    height: 18vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 26px;
+}
+
+p {
+    margin-left: 25px;
+}
+
+
+.imagem {
+    width: 60%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(whats.png);
+}
+.cartoon {
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.batata {
+    width: 80%;
+    height: 35vh;
+    display: flex;
+    gap: 500px;
+    align-items: center;
+    justify-content: center;
+}
+
+.fejaoo {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.fejaoo div {
+    color: white;
+}
+.batata div div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.batata div img {
+    width: 40px;
+}
+
+@media only screen and (max-width:800px) {
+    .batata {
+        gap: 70px;
+    }
+    .fejaoo {
+        gap: 15px;
+    }
+    section .arroz {
+    }
+    section .arroz div {
+        width: 75%;
+        border-radius: 5px;
+        background-color: blue;
+        font-size: 23px;
+    }
+
+    .imagem {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:1300px) {
+
+    .batata {
+        gap: 100px;
+    }
+    .fejaoo {
+        gap: 30px;
+    }
+    section .arroz div {
+        width: 75%;
+        height: 30vh;
+        border-radius: 5px ;
+    }
+    .imagem {
+        height: 40vh;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    body {
+        gap: 0px;
+    }
+    .start {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+.imagem {
+    display: none;
+}
+.fejao {
+    display: none;
+}
+ section {
+    height: 40vh;
+    width: 100%;
+}
+.arroz {
+    width: 100%;
+}
+section .arroz div {
+    background-color: #9DC6EA;
+    width: 90%;
+    border-radius: 5px;
+    height: 25vh;
+    font-size: 23px;
+}
+
+.batata {
+    gap: 0px;
+    width: 100%;
+}
+
+.fejaoo {
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+}

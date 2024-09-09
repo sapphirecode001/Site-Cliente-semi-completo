@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    height: 10vh;
+    width: 20%;
+    border: 2px solid black;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+a:hover {
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+}
+
+@media only screen and (max-width:1000px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    a {
+        height: 10vh;
+        width: 60%;
+    }
+}

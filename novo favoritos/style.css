@@ -1,0 +1,371 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(167, 167, 167);
+    width: 100%;
+}
+
+menu {
+    height: 100vh;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+}
+
+.icons {
+    width: 20%;
+    background-color: #9DC6EA;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+nav {
+    background-color: #9DC6EA;
+    width: 60%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 18px;
+}
+.pesqui {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.pesqui input {
+    width: 85%;
+    height: 4vh;
+    border-radius: 10px;
+    border-right: none;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    text-align: center;
+}
+
+::placeholder {
+    font-size: 18px;
+}
+
+.pesqui .btnpesq {
+    width: 15%;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border: none;
+    border-left: 1px solid black;
+    height: 4vh;
+    cursor: pointer;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnpesq img {
+    width: 35px;
+}
+
+nav ul {
+    display: flex;
+    gap: 50px;
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+a:hover {
+    color: #184DAB;
+}
+.icons {
+    display: flex;
+    gap: 40px;
+}
+
+.icons img {
+    width: 50px;
+    height: 50px;
+    background: none;
+}
+
+.btn {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+.btnmob {
+    display: none;
+}
+.btn img {
+    background: none;
+    border: none;
+    filter: drop-shadow(0px 3px 1px rgb(51, 51, 51));
+}
+
+#icons img {
+    width: 50%;
+    height: 9vh;
+}
+
+.container {
+    background-color: rgb(212, 212, 212);
+    min-height: 84vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.divsec {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.divorg {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.divsec section {
+    width: 100%;
+    height: 30vh;
+    background-color :#F1F1F1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 5px;
+}
+
+.secdiv {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+}
+
+.secdiv img {
+    min-width: 65%;
+    max-width: 80%;
+    background-color: black;
+    height: auto;
+}
+
+.secdiv-text {
+    width: 75%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+}
+.divorg h2 {
+    color: #184DAB;
+}
+
+.divgap {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    background-color: #184DAB;
+    height: 6vh;
+    color: white;
+    font-size: 18px;
+}
+.mob {
+    display: none;
+}
+
+.navmob {
+    display: none;
+}
+
+@media only screen and (max-height:750px) {
+    .secdiv-text {
+        display: flex;
+        gap: 15px;
+    }
+}
+
+@media only screen and (max-width:750px) {
+
+    .mob {
+        display: block;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: auto;
+    }
+    .pc {
+        display: none;
+    }
+    .btnmob {
+        display: flex;
+        width: 50px;
+        cursor: pointer;
+        background: none;
+        border: none;
+    }
+
+    nav input::placeholder {
+        font-size: 13px;
+    }
+
+    #icons img {
+        width: 50px;
+        height: 50px;
+    }
+    .imgic {
+        display: none;
+    }
+    nav {
+        width: 100%;
+    }
+
+    nav ul{
+       display: none;
+    }
+
+    .icons {
+        width: 35%;
+    }
+
+    #btnicon {
+        display: none;
+    }
+
+    .pesqui {
+        width: 100%;
+
+    }
+    .navmob {
+       display: block;
+        background: none;
+
+    }
+    #itens {
+        display: none;
+    }
+    .navmob ul li, a {
+        text-align: center;
+        text-decoration: none;
+        font-size: 25px;
+        width: 100%;
+    }
+
+    .navmob ul li {
+        border-top: 1px solid rgb(167, 167, 167);
+    }
+    .navmob ul li a {
+        display: inline-block;
+        text-align: center;
+        background-color: #9DC6EA;
+        text-decoration: none;
+        color: black;
+        font-size: 25px;
+        width: 100%;
+    }
+    .navmob ul li a:hover {
+        color: #184DAB;
+    }
+
+    .navmob button {
+        width: 100%;
+        height: 4vh;
+        color: black;
+        font-size: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        background-color: #9DC6EA;
+        border: none;
+        border-top: 1px solid rgb(167, 167, 167);
+    }
+    .navmob button img {
+        color: black;
+        cursor: pointer;
+    }
+    
+    .divsec {
+        width: 100%;
+    }
+
+    .divsec section {
+        width: 100%;
+        min-height: 25vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0px;
+    }
+
+    .secdiv {
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 15vh;
+    }
+    
+    .secdiv img {
+        width: 100%;
+    }
+    
+    .secdiv-text {
+        width: 100%;
+        height: 25vh;
+        display: flex;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .secdiv-text h2 {
+        text-align: center;
+        font-size: 15px;
+    }
+}
+
+
